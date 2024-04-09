@@ -1,0 +1,7 @@
+{
+  "name": "BlueIDAccessCapacitorSample",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
