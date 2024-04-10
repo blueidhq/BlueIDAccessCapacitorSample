@@ -1,0 +1,36 @@
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bottom-hint {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 12px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.item-info.id {
+    font-weight: bold;
+}

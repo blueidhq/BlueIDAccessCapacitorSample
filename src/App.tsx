@@ -1,7 +1,8 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonRouterOutlet, setupIonicReact, IonTabs, IonLabel, IonTabBar, IonTabButton } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import Devices from './pages/Devices';
+import Credentials from './pages/Credentials';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,19 +23,34 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import './App.css';
+
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
+      <IonTabs>
+            <IonRouterOutlet>
+              <Route exact path="/devices">
+                <Devices />
+              </Route>
+              <Route exact path="/credentials">
+                <Credentials />
+              </Route>
+              <Route exact path="/">
+                <Redirect to="/devices" />
+              </Route>
+            </IonRouterOutlet>
+            <IonTabBar slot="bottom">
+              <IonTabButton tab="devices" href="/devices">
+                    <IonLabel>Devices</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="credentials" href="/credentials">
+                    <IonLabel>Credentials</IonLabel>
+              </IonTabButton>
+            </IonTabBar>
+        </IonTabs>
     </IonReactRouter>
   </IonApp>
 );
