@@ -12,6 +12,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@blueid/access-capacitor": "^1.16.0",
+    "@blueid/access-proto": "^1.16.0",
     "@capacitor/android": "^5.7.4",
     "@capacitor/app": "5.0.7",
     "@capacitor/core": "5.7.4",
