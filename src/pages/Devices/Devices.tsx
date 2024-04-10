@@ -68,9 +68,7 @@ const Devices: React.FC = () => {
     )
 
     return () => {
-      listeners.map(async listener =>
-        (await listener).remove(),
-      )
+      listeners.map(async listener => (await listener).remove())
     }
 
     // Runs only on mount

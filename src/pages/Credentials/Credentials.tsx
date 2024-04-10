@@ -124,6 +124,11 @@ const Credentials: React.FC = () => {
               </div>
             </div>
           ))}
+          {!credentials.length && (
+            <div className='bottom-hint'>
+              No credentials found
+            </div>
+          )}
         </div>
       </IonContent>
     </IonPage>
