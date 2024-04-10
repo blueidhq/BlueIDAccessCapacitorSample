@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.example.blueid.capacitor;
 
 import com.getcapacitor.BridgeActivity;
 

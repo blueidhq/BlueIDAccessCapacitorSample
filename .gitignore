@@ -9,7 +9,9 @@
 /coverage
 
 # production
-/dist
+/dist/*
+# index.html is needed when trying to run app, otherwise users would need to run build first
+!/dist/index.html
 
 # misc
 .DS_Store

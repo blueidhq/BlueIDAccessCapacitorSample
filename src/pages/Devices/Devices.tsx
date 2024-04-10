@@ -93,7 +93,7 @@ const Devices: React.FC = () => {
             <DeviceItem key={device.deviceId} allDevices={allDevices} nearbyDevice={device}/>
           ))}
           <div className='bottom-hint'>
-            Click on any device to try to open it
+            {nearbyDevices.length ? 'Click on any device to try to open it' : 'No nearby devices found'}
           </div>
         </div>
       </IonContent>

@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "start:ios": "npm run build && ionic capacitor run ios -l --external --port=5173",
-    "start:android": "npm run build && ionic capacitor run android -l --external --port=5173",
+    "start:ios": "ionic capacitor run ios -l --external --port=5173",
+    "start:android": "ionic capacitor run android -l --external --port=5173",
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
