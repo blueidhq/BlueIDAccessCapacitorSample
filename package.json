@@ -6,10 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "start:ios": "npm run build && ionic capacitor run ios -l --external --port=5173",
+    "start:android": "npm run build && ionic capacitor run android -l --external --port=5173",
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ionic:build": "npm run build",
+    "ionic:serve": "vite"
   },
   "dependencies": {
     "@blueid/access-capacitor": "^1.16.0",
