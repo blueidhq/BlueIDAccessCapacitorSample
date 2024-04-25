@@ -1,5 +1,5 @@
 PODS:
-  - BlueidAccessCapacitor (1.16.0):
+  - BlueidAccessCapacitor (1.24.0):
     - Capacitor
     - iOSDFULibrary (= 4.15.0)
     - SwiftProtobuf (= 1.24.0)
@@ -51,7 +51,7 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/status-bar"
 
 SPEC CHECKSUMS:
-  BlueidAccessCapacitor: 1df9ccd13e462625bb88d975ca7ac6f2d579ffbf
+  BlueidAccessCapacitor: d44a4035c551868352916a95c371a1257f1f111d
   Capacitor: 4fe9adf012caceb4c71ffea2f1f4d005cdcbeea7
   CapacitorApp: 17fecd0e6cb23feafac7eb0939417389038b0979
   CapacitorCordova: a6e87fccc0307dee7aec1560ec9398485f2b0ce7
@@ -64,4 +64,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0ede197521c6e368fdd1158d78e4ad8a32dffdd4
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.14.3
