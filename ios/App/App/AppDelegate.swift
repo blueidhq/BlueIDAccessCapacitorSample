@@ -1,6 +1,6 @@
 import UIKit
 import Capacitor
-import BlueidAccessCapacitor // ADD THIS LINE
+import BlueIDAccessSDK // ADD THIS LINE
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
