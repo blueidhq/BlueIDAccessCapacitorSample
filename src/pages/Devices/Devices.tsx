@@ -20,9 +20,9 @@ const Devices: React.FC = () => {
     setAllDevices(result.devices)
   }, [])
 
-  const startBluetoothScan = useCallback(async () => {
-    if (!(await BlueIDAccess.runCommand('isBluetoothActive'))) {
-        await BlueIDAccess.runCommand('bluetoothActivate')
+  const startScan = useCallback(async () => {
+    if (!(await BlueIDAccess.runCommand('isScanningActive'))) {
+        await BlueIDAccess.runCommand('startScanning')
     }
   }, [])
 
@@ -41,7 +41,7 @@ const Devices: React.FC = () => {
 
   useEffect(() => {
     updateDevices()
-    startBluetoothScan()
+    startScan()
 
     const listeners: Promise<BlueAccessListener>[] = []
 
